@@ -1,8 +1,8 @@
 # SLP Bridge
 
-Copyright (c) 2015 Transparent Language, Inc.  All rights reserved.
-License: MIT (see LICENCE)
-Author: Alexander L. Mikhailov
+Copyright (c) 2015 Transparent Language, Inc.  All rights reserved.  
+License: MIT (see LICENCE)  
+Author: Alexander L. Mikhailov  
 
 ## Synopsis
 
