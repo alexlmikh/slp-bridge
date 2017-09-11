@@ -1,0 +1,11 @@
+[Unit]
+Description=SLP Bridge
+After=network.target
+
+[Service]
+TimeoutStartSec=0
+EnvironmentFile=-/etc/default/slpbridge
+ExecStart=/usr/local/sbin/slpbridge $SOURCE_IFACE $TARGET_IFACE
+
+[Install]
+WantedBy=multi-user.target

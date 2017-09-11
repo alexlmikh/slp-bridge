@@ -1,0 +1,21 @@
+#!/bin/sh
+set -e
+
+#Enable SystemD service
+if [ -x /bin/systemctl ]; then
+	systemctl enable slpbridge > /dev/null
+else
+	#Run update-rc.d when running in a non-Upstart,non-SystemD environment
+	if ! { [ -x /sbin/initctl ] && /sbin/initctl version 2>/dev/null | grep -q upstart; }; then
+        	update-rc.d slpbridge defaults > /dev/null || true
+	fi
+fi
+
+#Start/Restart
+if [ -n "$2" ]; then
+        _dh_action=restart
+else
+        _dh_action=start
+fi
+
+service slpbridge $_dh_action 2>/dev/null || true

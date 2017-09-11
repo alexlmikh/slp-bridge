@@ -1,0 +1,9 @@
+Package: slpbridge
+Version: ${VERSION}
+Section: admin
+Priority: optional
+Architecture: amd64
+Depends: debconf (>= 0.2.26), libpoe-perl (>= 2:1.35), libio-socket-multicast-perl (>= 1.12), libsocket-linux-perl (>=0.01), libsocket-netlink-perl (>=0.04), libsocket-netlink-route-perl (>=0.05)
+Maintainer: Alexander L. Mikhailov <amikhailov@envionsoftware.com>
+Description: SLP Bridge 
+	A super-simple Service Location Protocol bridge 

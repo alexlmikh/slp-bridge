@@ -1,0 +1,9 @@
+#
+# SLP Bridge
+#
+
+#Interface to listen for SLP requests on
+SOURCE_IFACE=docker0
+
+#Interface to relay SLP requests to
+TARGET_IFACE=eth0
