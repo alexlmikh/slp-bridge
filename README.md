@@ -53,8 +53,8 @@ you can use *service*, *systemctl* or *initctl* to start and stop it.
 %make build
 
 #Install ($PERL_VERSION must match your Perl version, e.g. 5.20)
-dpkg -i slpbridge-*.deb perl/$PERL_VERSION/*.deb
+%dpkg -i slpbridge-*.deb perl/$PERL_VERSION/*.deb
 
 #Fix dependencies
-apt-get -f install
+%apt-get -f install
 ```
