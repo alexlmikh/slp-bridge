@@ -47,6 +47,8 @@ you can use *service*, *systemctl* or *initctl* to start and stop it.
 
 ### Using *deb* package
 
+
+```
 #Build slpbridge .deb package
 %make build
 
@@ -55,3 +57,4 @@ dpkg -i slpbridge-*.deb perl/$PERL_VERSION/*.deb
 
 #Fix dependencies
 apt-get -f install
+```
